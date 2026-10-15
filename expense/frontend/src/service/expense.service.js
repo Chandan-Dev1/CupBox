@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:3000/api/expense",
+  baseURL: "https://cupbox-1.onrender.com/api/expense",
 });
 
 export const createExpense = async (data) => {
