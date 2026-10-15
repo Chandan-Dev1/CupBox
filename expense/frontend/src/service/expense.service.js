@@ -11,7 +11,7 @@ export const createExpense = async (data) => {
 
 export const getExpenses = async () => {
   const response = await API.get("/get");
-  return response.data;
+  return response.data.expense;
 };
 
 export const updateExpense = async (id, data) => {
