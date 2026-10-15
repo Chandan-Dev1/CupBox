@@ -1,6 +1,7 @@
 # Full-Stack URL Shortener
 
 A beginner-friendly URL shortener built with React, Vite, Tailwind CSS, Node.js, Express, MongoDB and Mongoose.
+Available at your primary URL https://cupbox.onrender.com
 
 ## Features
 
