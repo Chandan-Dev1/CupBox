@@ -19,12 +19,13 @@ const getErrorMessage = (error, fallback) => {
   return error.response?.data?.message || fallback;
 };
 
+// Get all expenses
 export const fetchExpenses = createAsyncThunk(
   "expense/fetchExpenses",
   async (_, { rejectWithValue }) => {
     try {
       const data = await getExpenses();
-      return data || [];
+      return data.expense || [];
     } catch (error) {
       return rejectWithValue(
         getErrorMessage(error, "Failed to fetch expenses")

@@ -10,14 +10,9 @@ app.use(morgan("dev"));
 
 app.use(
   cors({
-    origin: [
-      "http://localhost:5173",
-      "https://cupbox-3.onrender.com",
-    ],
+    origin:"http://localhost:5173"
   })
 );
-
-app.use(express.static("./src/public"));
 
 app.use("/api/expense", ExRouter);
 

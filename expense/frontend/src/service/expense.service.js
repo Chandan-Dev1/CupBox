@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://cupbox-1.onrender.com/api/expense",
+  baseURL: "http://localhost:3000/api/expense",
 });
 
 export const createExpense = async (data) => {
@@ -11,7 +11,7 @@ export const createExpense = async (data) => {
 
 export const getExpenses = async () => {
   const response = await API.get("/get");
-  return response.data.expense;
+  return response.data
 };
 
 export const updateExpense = async (id, data) => {
